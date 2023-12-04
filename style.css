@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+
+header{
+    border: solid black 2px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+main{
+    border: solid black 2px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+nav{
+    border: solid black 2px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+article{
+    border: solid black 2px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+footer{
+    border: solid black 2px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.chickenshower{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 640px){
+    body{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    .chickenshower{
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1007px) and (min-width: 640px){
+    main{
+        flex-direction: column;
+    }
+}
